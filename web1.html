@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kk Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="KK_logo_final.png" sizes="64x64" type="image/png">
+    <style>
+        /* About Section Styles */
+        .about-section {
+            padding: 50px 20px;
+            background: #f9f9f9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            display: flex;
+            max-width: 1200px;
+            width: 100%;
+            gap: 20px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            
+        }
+        
+        .image {
+            flex: 1;
+            text-align: center;
+            margin-left: -80px; /* Adjust the value as needed */
+            margin-right: 20px;
+        }
+        
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        
+        .text {
+            flex: 1;
+            max-width: 500px;
+            text-align: justify;
+            text-justify: inter-word;
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%; /* Adjust the width as needed */
+            padding: 20px; /* Add padding for a cleaner look */
+            line-height: 1.6; /* Increase line height for readability */
+        }
+        
+        .text h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .text p {
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .btn.primary {
+            text-align: justify;
+            text-justify: inter-word;
+            background-color: #6c63ff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            display: block;
+        }
+        
+        .btn.primary:hover {
+            background-color: #5a54e8;
+        }
+   
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    width: 100%;
+}
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 1000px;
+}
+.contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+    
+}
+.contact-form label {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    text-align: left;
+    width: 60%;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    
+    
+}
+.contact-form textarea {
+    resize: vertical;
+    height: 100px;
+}
+.contact-form input[type="submit"] {
+    width: 60%;
+    padding: 10px;
+    background-color: #5a54e8;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    align-content: flex-start;
+}
+.contact-form input[type="submit"]:hover {
+    background-color: #218838;
+}
+        </style>
+</head>
+<body>
+<!-- Three-Dot Menu -->
+<div class="menu">
+    <i class="fa fa-ellipsis-v" onclick="toggleSidebar()"></i>
+</div>
+
+<!-- Sidebar -->
+<div class="sidebar" id="sidebar">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</div>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="content">
+            <h2>Hello, <span style="color: black;">I am</span></h2>
+            <h1 style="font-family: 'Lucida Handwriting', cursive;">Karthik Kannan</h1>
+            <p>An Aspiring Data Analyst</p>
+            <div class="buttons">
+                <a href="mailto:karthikkannan22110@gmail.com?subject=Hiring Inquiry&body=Hi, I am interested in hiring you for..." target="_blank">
+                <button class="btn primary">Hire Me</button>
+                </a>
+                <a href="file:///C:/Users/KARTHIK%20K/Desktop/Resume/Karthik%20_CM_Resume%20%20.pdf" download>
+                <button class="btn secondary">Get CV</button>
+                </a>
+            </div>
+        </div>
+        <div class="image">
+            <img src="developer.png" alt="Karthik Kannan">
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+<section class="about-section" id="about">
+    <div class="container">
+        <div class="about-content">
+            <div class="image">
+                <img src="KK2.jpg" alt="About Me Illustration">
+            </div>
+            <div class="text">
+                <h2>LET'S INTRODUCE ABOUT MYSELF</h2>
+                
+                <p>
+                    I’m Karthik Kannan, a passionate tech enthusiast and a final-year B.Tech student in Artificial Intelligence and Data Science. With skills in 
+                    data analysis, machine learning, and natural language processing (NLP), I enjoy turning data into meaningful insights. 
+                    Proficient in tools like Python, Power BI, and MySQL, I thrive on solving complex problems and exploring new technologies. 
+                    My drive for innovation fuels my goal of making a positive impact through technology.
+                </p>
+                <p>
+                    As a curious learner and team player, I’m always seeking opportunities to grow and contribute. Whether it’s tackling technical 
+                    challenges or brainstorming fresh ideas, I approach everything with energy, focus, and creativity. Outside of work, I value learning new 
+                    concepts and building innovative solutions that combine creativity with real-world applications, helping me grow as a professional 
+                    in the exciting field of AI and data science.
+                </p>
+                <a href="file:///C:/Users/KARTHIK%20K/Desktop/Resume/Karthik%20_CM_Resume%20%20.pdf" download>
+                <button class="btn primary">Download CV</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- JavaScript -->
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById("sidebar");
+            const body = document.body;
+
+            // Toggle the sidebar visibility
+            if (sidebar.style.right === "0%") {
+                sidebar.style.right = "-100%"; // Hide the sidebar
+                body.classList.remove("overlay-active");
+            } else {
+                sidebar.style.right = "0%"; // Show the sidebar
+                body.classList.add("overlay-active");
+            }
+        }
+    </script>
+   <section class="certificates-section">
+    <h1>Academic Achievements</h1>
+
+    <div class="certificate-item">
+        <img src="GDSC1.png" alt="Certificate 1">
+        <div class="certificate-details">
+            <h3>GDSC Web 3 Co-Lead</h3>
+            <p>Appointed as the GDSC Lead for the Web3 domain during my pre-final year, where I developed leadership skills, taught technical concepts, and built a strong professional network.</p>
+        </div>
+    </div>
+
+    <div class="certificate-item">
+        <img src="Karthik ISTE LEVEL 3.jpg" alt="Certificate 2">
+        <div class="certificate-details">
+            <h3>ISTE - National Level Mathematical Quiz</h3>
+            <p>I participated in Dr. Ramanujams National Level Mathematical Quiz and claimed the certificates of District level , state level and National Level certificates </p>
+        </div>
+    </div>
+
+    <div class="certificate-item">
+        <img src="MSME-form.png" alt="Certificate 3">
+        <div class="certificate-details">
+            <h3> TECH STARTUP - TechBask</h3>
+            <p>Co-founded a startup in 2023, registered under MSME, and secured incubation at Anna Incubator. Focused on developing innovative solutions in AI - IoT domain, driving growth through technology and strategic innovation</p>
+        </div>
+    </div>
+
+    <div class="certificate-item">
+        <img src="SIMATS.jpg" alt="Certificate 4">
+        <div class="certificate-details">
+            <h3>SIMATS Certificate</h3>
+            <p>Participated in the Sci Expo, a project expo held by Saveetha Engineering College, and won second prize for our project with a cash prize of ₹10,000.</p>
+        </div>
+    </div>
+
+</section>
+<br>
+<br>
+<br>
+
+<center>
+    
+    <h1>Technical Stack</h1>
+
+    <img src="TechStack.png" alt="KK">
+<div class="contact-form" >
+    <h1>CONTACT ME</h1>
+    <form>
+        <label for="firstName">First Name *</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">Last Name *</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="comments">Comments / Questions *</label>
+        <textarea id="comments" name="comments" required></textarea>
+
+        <input type="submit" value="Send Message">
+    </form>
+</div>
+</center>
+<br>
+<br>
+<br>
+
+
+
+</body>
+</html>

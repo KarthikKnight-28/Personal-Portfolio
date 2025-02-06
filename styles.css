@@ -1,0 +1,304 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.content {
+    flex: 1;
+    padding-left: 50px; /* Adjust padding to move the content right */
+}
+
+.content h2 {
+    color: #6c63ff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn.primary {
+    background-color: #6c63ff;
+    color: white;
+}
+
+.btn.secondary {
+    background-color: transparent;
+    color: #6c63ff;
+    border: 2px solid #6c63ff;
+}
+
+/* Image Section */
+.image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    max-width: 700px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Three-Dot Menu */
+.menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001; /* Ensures the menu stays on top of other elements */
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 20px; /* Aligns the sidebar with the button's vertical position */
+    right: -100%; /* Initially hidden off-screen */
+    height: auto; /* Adjust the height to fit the content */
+    background-color: white;
+    color: #333;
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+    transition: right 0.5s ease; /* Smooth slide-in transition */
+    z-index: 1000; /* Stays behind the menu button */
+    padding: 5px 10px;
+    transform: translateX(-10%); 
+}
+
+.sidebar ul {
+    display: flex; /* Horizontal layout for the menu items */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 0 15px; /* Add spacing between items */
+}
+
+.sidebar ul li a {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    color: #6c63ff; /* Highlight on hover */
+}
+
+/* Overlay effect to prevent scrolling when sidebar is active */
+body.overlay-active {
+    overflow: hidden;
+}
+
+.sidebar.open {
+    transform: translateX(0); /* Move it back to visible position */
+  }
+  
+  .certificates-section {
+    padding: 20px;
+    max-width: 70%; /* Full-width layout */
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+.certificates-section h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.certificate-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*.certificate-item:nth-child(even) {
+    flex-direction: row-reverse; (Reverse layout for even items )
+} */
+
+.certificate-item img {
+    width: 280px; /* Larger image size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; /* Smooth magnification */
+}
+
+.certificate-item img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.certificate-details {
+    flex: 1;
+}
+
+.certificate-details h3 {
+    font-size: 1.8rem;
+    margin: 0;
+    color: #007bff;
+}
+
+.certificate-details p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.certificate-item:last-child {
+    margin-bottom: 0;
+
+/* General Styling for Section */
+/* General Styling for Section */
+/* General Styling */
+.certificates-section {
+    padding: 20px;
+    max-width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.FS-section h1{
+   font-size: 1rem;
+}
+/* Title Styling */
+.certificates-section h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    width: 100%;
+}
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    
+}
+.contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+.contact-form label {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.contact-form textarea {
+    resize: vertical;
+    height: 100px;
+}
+.contact-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+.contact-form input[type="submit"]:hover {
+    background-color: #218838;
+}
+#sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Initial state, hidden */
+    width: 350px; /* Increase the width */
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    transition: right 0.3s ease; /* Smooth transition */
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    margin: 20px 0;
+}
+
+#sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.overlay-active {
+    overflow: hidden; /* Prevent scrolling when sidebar is active */
+}
